@@ -1,7 +1,5 @@
+import profileImgLarge, { default as profileImg, default as profileImgPlaceholder } from 'assets/images/me.jpg';
 import profileKatakana from 'assets/katakana-profile.svg?url';
-import profileImgLarge from 'assets/profile-large.jpg';
-import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -20,7 +18,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Hi, {`I'm`} Kanak Kholwal, and I work as a web developer using the MERN Stack. My goal is to create useful tools for people to use, and I take great pleasure in figuring out how to do that.
+    Hi, {`I'm`} Kanak Kholwal, and I work as a Software Developer with Javascript, Typescript and Go Lang. My goal is to create useful tools for people to use, and I take great pleasure in figuring out how to do that.
 
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">

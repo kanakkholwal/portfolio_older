@@ -3,6 +3,7 @@ import { Icon } from 'components/Icon';
 import { useTheme } from 'components/ThemeProvider';
 import { useReducedMotion } from 'framer-motion';
 import { useHasMounted, useInViewport } from 'hooks/index';
+import NextImage from "next/image";
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { resolveSrcFromSrcSet, srcSetToString } from 'utils/image';
 import { classes, cssProps, numToMs } from 'utils/style';
@@ -171,7 +172,7 @@ const ImageElements = ({
         </Fragment>
       )}
       {!isVideo && (
-        <img
+        <NextImage
           className={styles.element}
           data-loaded={loaded}
           onLoad={onLoad}
@@ -186,7 +187,7 @@ const ImageElements = ({
         />
       )}
       {showPlaceholder && (
-        <img
+        <NextImage
           aria-hidden
           className={styles.placeholder}
           data-loaded={loaded}

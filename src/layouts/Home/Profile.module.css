@@ -23,7 +23,8 @@
     overflow-x: hidden;
   }
 
-  @media (--mediaMobile), (--mediaMobileLS) {
+  @media (--mediaMobile),
+  (--mediaMobileLS) {
     padding-right: var(--spaceOuter);
     padding-left: var(--spaceOuter);
   }
@@ -78,7 +79,7 @@
 }
 
 .tag {
-  margin-top: 220px;
+  /* margin-top: 220px; */
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: var(--space4XL) 1fr;
