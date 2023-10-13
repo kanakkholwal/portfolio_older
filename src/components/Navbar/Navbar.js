@@ -3,7 +3,7 @@ import { Monogram } from 'components/Monogram';
 import { useTheme } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
-import { useAppContext, useScrollToHash, useWindowSize } from 'hooks';
+import { useAppContext, useScrollToHash, useWindowSize } from 'hooks/index';
 import RouterLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';

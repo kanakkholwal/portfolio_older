@@ -16,9 +16,9 @@ import {
   ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
-import styles from './Uses.module.css';
+import styles from 'src/css/Uses.module.css';
 
-export const Uses = () => {
+const Uses = () => {
   return (
     <Fragment>
       <Meta
@@ -169,3 +169,4 @@ export const Uses = () => {
     </Fragment>
   );
 };
+export default Uses;

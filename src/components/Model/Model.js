@@ -1,5 +1,5 @@
 import { animate, useReducedMotion, useSpring } from 'framer-motion';
-import { useInViewport } from 'hooks';
+import { useInViewport } from 'hooks/index';
 import {
   createRef,
   startTransition,

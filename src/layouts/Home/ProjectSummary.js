@@ -7,7 +7,7 @@ import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { useTheme } from 'components/ThemeProvider';
 import { Transition } from 'components/Transition';
-import { useWindowSize } from 'hooks';
+import { useWindowSize } from 'hooks/index';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { cssProps, media } from 'utils/style';

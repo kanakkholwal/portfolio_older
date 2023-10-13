@@ -4,7 +4,7 @@ import GothamBookItalic from 'assets/fonts/gotham-book-italic.woff2';
 import GothamBook from 'assets/fonts/gotham-book.woff2';
 import GothamMediumItalic from 'assets/fonts/gotham-medium-italic.woff2';
 import GothamMedium from 'assets/fonts/gotham-medium.woff2';
-import { useHasMounted } from 'hooks';
+import { useHasMounted } from 'hooks/index';
 import Head from 'next/head';
 import { createContext, useEffect } from 'react';
 import { classes, media } from 'utils/style';

@@ -7,7 +7,7 @@ import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
 import { VisuallyHidden } from 'components/VisuallyHidden';
 import { AnimatePresence } from 'framer-motion';
-import { useInterval, usePrevious, useScrollToHash } from 'hooks';
+import { useInterval, usePrevious, useScrollToHash } from 'hooks/index';
 import dynamic from 'next/dynamic';
 import RouterLink from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
@@ -107,18 +107,16 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 </div>
               </Heading>
             </header>
-            <RouterLink href="/#project-1">
-              <a
+            <RouterLink href="/#project-1"
                 className={styles.scrollIndicator}
                 data-status={status}
                 data-hidden={scrollIndicatorHidden}
                 onClick={handleScrollClick}
               >
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
-              </a>
+              
             </RouterLink>
-            <RouterLink href="/#project-1">
-              <a
+            <RouterLink href="/#project-1"
                 className={styles.mobileScrollIndicator}
                 data-status={status}
                 data-hidden={scrollIndicatorHidden}
@@ -126,7 +124,6 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
               >
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
                 <ArrowDown aria-hidden />
-              </a>
             </RouterLink>
           </Fragment>
         )}

@@ -7,9 +7,9 @@ import { Meta } from 'components/Meta';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
 import { Fragment } from 'react';
-import styles from './404.module.css';
+import styles from 'src/css/404.module.css';
 
-export function Page404() {
+export default function Page404() {
   return (
     <section className={styles.page}>
       <Meta

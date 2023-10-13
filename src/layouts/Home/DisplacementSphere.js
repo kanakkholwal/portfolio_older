@@ -1,7 +1,7 @@
 import { useTheme } from 'components/ThemeProvider';
 import { Transition } from 'components/Transition';
 import { useReducedMotion, useSpring } from 'framer-motion';
-import { useInViewport, useWindowSize } from 'hooks';
+import { useInViewport, useWindowSize } from 'hooks/index';
 import { startTransition, useEffect, useRef } from 'react';
 import {
   AmbientLight,

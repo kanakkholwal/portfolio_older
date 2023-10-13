@@ -12,10 +12,10 @@ import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
 import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
+import styles from 'src/css/Contact.module.css';
 import { cssProps, msToNum, numToMs } from 'utils/style';
-import styles from './Contact.module.css';
 
-export const Contact = () => {
+const Contact = () => {
   const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
@@ -180,6 +180,7 @@ export const Contact = () => {
     </Section>
   );
 };
+export default Contact;
 
 function getStatusError({
   status,

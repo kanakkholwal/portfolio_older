@@ -37,8 +37,8 @@ import {
   ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
+import styles from 'src/css/Slice.module.css';
 import { media } from 'utils/style';
-import styles from './Slice.module.css';
 
 const title = 'Biomedical image collaboration';
 const description =
