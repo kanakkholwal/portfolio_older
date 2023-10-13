@@ -10,7 +10,7 @@ import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { tokens } from 'components/ThemeProvider/theme';
 import { Transition } from 'components/Transition';
-import { useFormInput } from 'hooks';
+import { useFormInput } from 'hooks/index';
 import { useRef, useState } from 'react';
 import styles from 'src/css/Contact.module.css';
 import { cssProps, msToNum, numToMs } from 'utils/style';

@@ -1,3 +1,5 @@
+import { GrLinkedinOption } from 'react-icons/gr';
+import { RiTwitterXFill } from 'react-icons/ri';
 import { classes } from 'utils/style';
 import styles from './Icon.module.css';
 import ArrowLeft from './svg/arrow-left.svg';
@@ -14,8 +16,6 @@ import Menu from './svg/menu.svg';
 import Pause from './svg/pause.svg';
 import Play from './svg/play.svg';
 import Send from './svg/send.svg';
-import Twitter from './svg/twitter.svg';
-
 export const icons = {
   arrowLeft: ArrowLeft,
   arrowRight: ArrowRight,
@@ -26,12 +26,13 @@ export const icons = {
   error: Error,
   figma: Figma,
   github: Github,
+  linkedin: GrLinkedinOption,
   link: Link,
   menu: Menu,
   pause: Pause,
   play: Play,
   send: Send,
-  twitter: Twitter,
+  twitter: RiTwitterXFill,
 };
 
 export const Icon = ({ icon, className, ...rest }) => {

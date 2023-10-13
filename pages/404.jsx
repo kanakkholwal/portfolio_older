@@ -6,7 +6,6 @@ import { Heading } from 'components/Heading';
 import { Meta } from 'components/Meta';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
-import { Fragment } from 'react';
 import styles from 'src/css/404.module.css';
 
 export default function Page404() {
@@ -18,7 +17,7 @@ export default function Page404() {
       />
       <Transition in>
         {visible => (
-          <Fragment>
+          <>
             <div className={styles.details}>
               <div className={styles.text}>
                 <Heading
@@ -77,7 +76,7 @@ export default function Page404() {
                 Animation from Ghost in the Shell (1995)
               </a>
             </div>
-          </Fragment>
+          </>
         )}
       </Transition>
     </section>
