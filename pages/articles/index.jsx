@@ -18,6 +18,7 @@ import { classes, cssProps } from 'utils/style';
 
 const ArticlesPost = ({
   slug,
+  href,
   title,
   abstract,
   date,
@@ -71,7 +72,7 @@ const ArticlesPost = ({
         </div>
       )}
       <Link
-        href={`/articles/${slug}`}
+        href={href}
         scroll={false}
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
@@ -155,7 +156,10 @@ export default function Articles({ posts, featured }) {
   const postsHeader = (
     <header className={styles.header}>
       <Heading className={styles.heading} level={5} as="h1">
+        <Link href="https://kanakkholwal.medium.com" target='_blank' scroll={false}>
+
         <DecoderText text="Latest articles" />
+        </Link>
       </Heading>
       <Barcode />
     </header>
@@ -167,7 +171,7 @@ export default function Articles({ posts, featured }) {
       {posts.map(({ slug, ...post }, index) => (
         <ArticlesPost key={slug} slug={slug} index={index} {...post} />
       ))}
-      {Array(2)
+      {Array(0)
         .fill()
         .map((skeleton, index) => (
           <SkeletonPost key={index} />
@@ -204,14 +208,37 @@ export default function Articles({ posts, featured }) {
 }
 const allPosts = [
     {
-      slug: '2021-05-01-what-is-ux',
-      title: 'What is UX?',
-      abstract: 'A brief introduction to the field of UX design.',
-      date: '2021-05-01',
+      slug: '2023-10-26',
+      href: 'https://kanakkholwal.medium.com/5-things-you-dont-know-about-promise-all-6ab469192b45',
+      title: 'Promise.all and Promise.allSettled -Unlocking JavaScript’s Hidden Secrets',
+      abstract: 'Leaverage Promise.all and Promise.allSettled in js to make your code more efficient and readable',
+      date: '2023-10-26',
       featured: true,
-      banner: '/images/what-is-ux.jpg',
+      banner: 'https://images.pexels.com/photos/4439901/pexels-photo-4439901.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200&w=1080&q=75',
       timecode: '2 min read',
       index: 0,
+    },
+    {
+      slug: '2023-10-25',
+      href: 'https://medium.com/@kanakkholwal/25-javascript-tricks-you-need-to-know-about-c1979ea2ec2b',
+      title: '25 JavaScript Tricks You Need To Know About',
+      abstract: 'These 25 JavaScript tricks cover a wide range of scenarios, from deep object manipulation to elegant looping and data manipulation. By incorporating..',
+      date: '2023-10-25',
+      featured: false,
+      banner: 'https://images.pexels.com/photos/14011035/pexels-photo-14011035.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200&w=640&q=75',
+      timecode: '2 min read',
+      index: 1,
+    },
+    {
+      slug: '2023-10-25',
+      href: 'https://medium.com/@kanakkholwal/how-to-deploy-your-node-js-backend-on-vercel-a-step-by-step-guide-21796db74601',
+      title: 'How to Deploy Your Node.js Backend on Vercel: A Step-by-Step Guide',
+      abstract: 'Deploying your Node.js backend on Vercel using Serverless Functions offers a powerful solution for creating scalable and flexible applications...',
+      date: '2023-10-25',
+      featured: false,
+      banner: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*vfhGnuF4gUINNv92',
+      timecode: '2 min read',
+      index: 2,
     },
   ];
   export function getStaticProps() {

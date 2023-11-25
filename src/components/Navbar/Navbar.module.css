@@ -18,7 +18,8 @@
     --headerNavFontSize: calc((22 / 16) * 1rem);
   }
 
-  @media (--mediaMobile), (--mediaMobileLS) {
+  @media (--mediaMobile),
+  (--mediaMobileLS) {
     bottom: auto;
   }
 }
@@ -28,6 +29,9 @@
   position: relative;
   padding: var(--spaceS) var(--spaceS) var(--spaceL);
   z-index: var(--zIndex2);
+  font-size: 36px;
+  color: cornflowerblue;
+  font-weight: bold;
 
   @media (--mediaMobile) {
     padding-bottom: var(--spaceS);
@@ -42,7 +46,8 @@
   flex: 1 1 auto;
   max-width: var(--space2XL);
 
-  @media (--mediaMobile), (--mediaMobileLS) {
+  @media (--mediaMobile),
+  (--mediaMobileLS) {
     display: none;
   }
 }
@@ -108,7 +113,8 @@
   position: relative;
   z-index: var(--zIndex2);
 
-  @media (--mediaMobile), (--mediaMobileLS) {
+  @media (--mediaMobile),
+  (--mediaMobileLS) {
     flex-direction: row;
     position: absolute;
     bottom: var(--spaceXL);
@@ -160,7 +166,8 @@
   justify-content: center;
   backdrop-filter: blur(16px);
 
-  @media (--mediaMobile), (--mediaMobileLS) {
+  @media (--mediaMobile),
+  (--mediaMobileLS) {
     display: flex;
   }
 
@@ -198,7 +205,8 @@
     top: auto;
   }
 
-  @media (--mediaMobileS), (max-height: 360px) {
+  @media (--mediaMobileS),
+  (max-height: 360px) {
     --headerNavFontSize: calc((18 / 16) * 1rem);
   }
 

@@ -1,6 +1,20 @@
+/** @type {import('next').NextConfig} */
+
 module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
+
+    swcMinify: true,
+    compiler: { styledComponents: { ssr: true } },
+    crossOrigin: 'anonymous',
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: "**",
+        },
+      ],
+    },
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
@@ -32,6 +46,7 @@ module.exports = {
       type: 'asset/source',
     });
 
+
     return config;
-  },
+  }
 };

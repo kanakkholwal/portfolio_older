@@ -1,3 +1,4 @@
+import CLIPng from 'assets/images/cli.png';
 import NexoNautsPng from 'assets/images/nexonauts.png';
 
 // Components
@@ -16,7 +17,7 @@ export const Home = () => {
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectOne = useRef();
-  // const projectTwo = useRef();
+  const projectTwo = useRef();
   // const projectThree = useRef();
   const details = useRef();
 
@@ -77,7 +78,7 @@ export const Home = () => {
         title="NexoNauts"
         description="A SAAS platform with a blogging system and e-commerce"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://www.nexonauts.com"
         model={{
           type: 'laptop',
           alt: 'The NexoNauts website',
@@ -89,32 +90,28 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
+      <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="CodeGenX"
+        description="Go-lang CLI tool designed to streamline project development by integrating popular features."
+        buttonText="View Github Repo"
+        buttonLink="https://github.com/GDSC-NITH/GenCodeX"
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'CodeGenX',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [CLIPng, CLIPng],
+              placeholder: CLIPng,
             },
           ],
         }}
       />
-      <ProjectSummary
+     {/*  <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
